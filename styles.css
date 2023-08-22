@@ -7,6 +7,48 @@ body {
     font-size: 20px;
 }
 
+#title {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin: auto 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#mainframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 128px -192px 0px auto;
+    width: 192px;
+    height: 512px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+#colorpicker {
+    width: 160px;
+    height: 96px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#color {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    border: 1px solid black;
+}
+
 #container {
     display: grid;
     margin: 128px auto 0px auto;
@@ -21,18 +63,6 @@ body {
     width: 32px;
     height: 32px;
     border: 1px solid black;
-}
-
-#title {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    color: black;
-    text-align: center;
-    margin: auto 0px 0px 0px;
-    display: flex;
-    justify-content: center;
 }
 
 #footer {
