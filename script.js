@@ -10,8 +10,11 @@ function createTable(cells) {
 }
 createTable(256);
 
-// Hovering to color
-const frames = document.querySelectorAll('.frame');
-frames.forEach((div) => div.addEventListener('mouseover', () => {
-    div.style.backgroundColor = "#000000";
-}));
+// Coloring function by hover
+function sketchColor() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "#000000";
+    }));
+}
+sketchColor();

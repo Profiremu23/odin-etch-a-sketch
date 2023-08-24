@@ -8,7 +8,6 @@ body {
 }
 
 #title {
-    position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -28,30 +27,92 @@ body {
 #toolbar {
     display: flex;
     flex-wrap: wrap;
-    margin: 128px -192px 0px auto;
-    width: 192px;
-    height: 512px;
+    justify-content: center;
+    margin: 0px -320px auto auto;
+    width: 128px;
+    height: 550px;
     background-color: aliceblue;
     border: 1px solid black;
 }
 
-#colorpicker {
-    width: 160px;
+#color-picker > input[type="color" i] {
+    width: 128px;
     height: 96px;
     margin: auto;
-    border: 1px solid black;
+    border: 0px;
+    background-color: aliceblue;
 }
 
 #color {
-    width: 32px;
-    height: 32px;
-    margin: auto;
+    width: 24px;
+    height: 24px;
+    margin: 0px 16px 0px 16px;
     border: 1px solid black;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: gray;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.green {
+    background-color: green;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.darkblue {
+    background-color: darkblue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.pink {
+    background-color: pink;
+}
+
+#frame-resize {
+    margin-bottom: 12px;
 }
 
 #container {
     display: grid;
-    margin: 128px auto 0px auto;
+    margin: 0px auto 32px auto;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     width: 544px;
     height: 544px;
@@ -66,15 +127,12 @@ body {
 }
 
 #footer {
-    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
     color: black;
     text-align: center;
-    margin: 0px 0px auto 0px;
-    border: 0px;
-    padding: 16px;
+    margin: 32px 0px auto 0px;
 }
 
 a {
