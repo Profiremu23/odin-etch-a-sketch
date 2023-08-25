@@ -10,6 +10,14 @@ function createTable(cells) {
 }
 createTable(256);
 
+// Clearing function
+function clearTable(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+const grid = document.querySelector('#container');
+
 // Coloring function by hover
 function sketchColor() {
     const frames = document.querySelectorAll('.frame');
