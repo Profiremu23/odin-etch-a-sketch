@@ -8,15 +8,23 @@ function createTable(cells) {
         container.appendChild(cell);
     }
 }
-createTable(256);
+createTable(256); // Pre-created frame to start sketching
 
 // Clearing function
+const grid = document.querySelector('#container');
+
 function clearTable(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
 }
-const grid = document.querySelector('#container');
+
+// Resize grid functions
+function refreshGrid() {
+    const newTable = prompt("How many frames your new Etch-a-Pro should contain in a square?")
+    clearTable(grid);
+    createTable(newTable);
+}
 
 // Coloring function by hover
 function sketchColor() {
