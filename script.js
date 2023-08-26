@@ -1,4 +1,4 @@
-// Initializing grid setup
+// Initializing grid setup logic
 const container = document.getElementById('container');
 
 function createTable(cells) {
@@ -19,14 +19,15 @@ function clearTable(parent) {
     }
 }
 
-// Resize grid functions
+// New grid button functions
 function refreshGrid() {
     const newTable = prompt("How many frames your new Etch-a-Pro should contain in a square?")
     clearTable(grid);
     createTable(newTable);
+    sketchColor();
 }
 
-// Coloring function by hover
+// Coloring by hover function
 function sketchColor() {
     const frames = document.querySelectorAll('.frame');
     frames.forEach((div) => div.addEventListener('mouseover', () => {
@@ -34,3 +35,5 @@ function sketchColor() {
     }));
 }
 sketchColor();
+
+// To-do: Color picking for sketchColor() function

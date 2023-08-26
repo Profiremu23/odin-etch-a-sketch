@@ -13,7 +13,7 @@ body {
     width: 100%;
     color: black;
     text-align: center;
-    margin: auto 0px 0px 0px;
+    margin: auto 0px 16px 0px;
     display: flex;
     justify-content: center;
 }
@@ -28,9 +28,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px -320px auto auto;
+    margin: 0px 32px 0px 0px;
     width: 128px;
-    height: 550px;
+    height: 512px;
     background-color: aliceblue;
     border: 1px solid black;
 }
@@ -111,19 +111,23 @@ body {
 }
 
 #container {
-    display: grid;
-    margin: 0px auto 32px auto;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    width: 544px;
-    height: 544px;
-    border: 4px solid black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 512px;
+    height: 512px;
+    outline: 2px solid #000;
+    border: none;
     background-color: white;
 }
 
 #container > div {
     width: 32px;
     height: 32px;
-    border: 1px solid black;
+    outline: 1px solid #000;
+    border: none;
+    display: inline-block;
 }
 
 #footer {
@@ -132,7 +136,7 @@ body {
     width: 100%;
     color: black;
     text-align: center;
-    margin: 32px 0px auto 0px;
+    margin: 64px 0px auto 0px;
 }
 
 a {
