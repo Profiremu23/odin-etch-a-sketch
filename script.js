@@ -4,8 +4,10 @@ const container = document.getElementById('container');
 function createTable(cells) {
     for (let rows = 0; rows < cells; rows++) {
         for (let columns = 0; columns < cells; columns++) {
-        let cell = document.createElement('div');
+          let cell = document.createElement('div');
         cell.classList.add('frame');
+        cell.style.width = 512/cells + "px";
+        cell.style.height = 512/cells + "px";
         container.appendChild(cell);
         }
     }
