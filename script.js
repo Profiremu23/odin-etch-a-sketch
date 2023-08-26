@@ -25,19 +25,115 @@ function clearTable(parent) {
 
 // New grid button functions
 function refreshGrid() {
-    const newTable = prompt("How many frames your new Etch-a-Pro should contain in a square?")
+    const newTable = prompt("How many frames should your new Etch-a-Pro have in a row?")
     clearTable(grid);
     createTable(newTable);
-    sketchColor();
+    defaultColor();
 }
 
-// Coloring by hover function
-function sketchColor() {
+// Sketching with all colors
+function defaultColor() {
     const frames = document.querySelectorAll('.frame');
     frames.forEach((div) => div.addEventListener('mouseover', () => {
-        div.style.backgroundColor = "#000000";
+        div.style.backgroundColor = "black";
     }));
 }
-sketchColor();
+defaultColor();
 
-// To-do: Color picking for sketchColor() function
+function colorWhite() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "white"
+    }));
+}
+
+function colorGrey() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "grey";
+    }));
+}
+
+function colorRed() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "red";
+    }));
+}
+
+function colorOrange() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "orange";
+    }));
+}
+
+function colorYellow() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "yellow";
+    }));
+}
+
+function colorLime() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "lime";
+    }));
+}
+
+function colorGreen() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "green";
+    }));
+}
+
+function colorCyan() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "cyan";
+    }));
+}
+
+function colorBlue() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "blue";
+    }));
+}
+
+function colorDarkBlue() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "darkblue";
+    }));
+}
+
+function colorPurple() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "purple";
+    }));
+}
+
+function colorMagenta() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "magenta";
+    }));
+}
+
+function colorPink() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = "pink";
+    }));
+}
+
+function colorCustom() {
+    const frames = document.querySelectorAll('.frame');
+    frames.forEach((div) => div.addEventListener('mouseover', () => {
+        document.getElementById("color-picker").style.backgroundColor = "inherit";
+    }));
+}

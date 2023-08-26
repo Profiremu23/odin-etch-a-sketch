@@ -11,21 +11,21 @@
 
         <div id="mainframe">
             <div id="toolbar">
-                <div id="color-picker"><input type="color"></div>
-                <div id="color" class="black"></div>
-                <div id="color" class="white"></div>
-                <div id="color" class="grey"></div>
-                <div id="color" class="red"></div>
-                <div id="color" class="orange"></div>
-                <div id="color" class="yellow"></div>
-                <div id="color" class="lime"></div>
-                <div id="color" class="green"></div>
-                <div id="color" class="cyan"></div>
-                <div id="color" class="blue"></div>
-                <div id="color" class="darkblue"></div>
-                <div id="color" class="purple"></div>
-                <div id="color" class="magenta"></div>
-                <div id="color" class="pink"></div>
+                <div id="color-picker" onclick="colorCustom()"><input type="color"></div>
+                <div id="color" class="black" onclick="defaultColor()"></div>
+                <div id="color" class="white" onclick="colorWhite()"></div>
+                <div id="color" class="grey" onclick="colorGrey()"></div>
+                <div id="color" class="red" onclick="colorRed()"></div>
+                <div id="color" class="orange" onclick="colorOrange()"></div>
+                <div id="color" class="yellow" onclick="colorYellow()"></div>
+                <div id="color" class="lime" onclick="colorLime()"></div>
+                <div id="color" class="green" onclick="colorGreen()"></div>
+                <div id="color" class="cyan" onclick="colorCyan()"></div>
+                <div id="color" class="blue" onclick="colorBlue()"></div>
+                <div id="color" class="darkblue" onclick="colorDarkBlue()"></div>
+                <div id="color" class="purple" onclick="colorPurple()"></div>
+                <div id="color" class="magenta" onclick="colorMagenta()"></div>
+                <div id="color" class="pink" onclick="colorPink()"></div>
                 <button id="frame-resize" onclick="refreshGrid()">New Grid</button>
             </div>
             <div id="container"></div>
