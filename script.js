@@ -2,13 +2,15 @@
 const container = document.getElementById('container');
 
 function createTable(cells) {
-    for (let i = 0; i < cells; i++) {
+    for (let rows = 0; rows < cells; rows++) {
+        for (let columns = 0; columns < cells; columns++) {
         let cell = document.createElement('div');
         cell.classList.add('frame');
         container.appendChild(cell);
+        }
     }
 }
-createTable(256); // Pre-created frame to start sketching
+createTable(16); // Pre-created frame to start sketching
 
 // Clearing function
 const grid = document.querySelector('#container');

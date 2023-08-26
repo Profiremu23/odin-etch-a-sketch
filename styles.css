@@ -24,6 +24,26 @@ body {
     align-items: center;
 }
 
+#container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 512px;
+    height: 512px;
+    outline: 2px solid #000;
+    border: none;
+    background-color: white;
+}
+
+#container > div {
+    width: 32px;
+    height: 32px;
+    outline: 1px solid #000;
+    border: none;
+    display: inline-block;
+}
+
 #toolbar {
     display: flex;
     flex-wrap: wrap;
@@ -108,26 +128,6 @@ body {
 
 #frame-resize {
     margin-bottom: 12px;
-}
-
-#container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    width: 512px;
-    height: 512px;
-    outline: 2px solid #000;
-    border: none;
-    background-color: white;
-}
-
-#container > div {
-    width: 32px;
-    height: 32px;
-    outline: 1px solid #000;
-    border: none;
-    display: inline-block;
 }
 
 #footer {
