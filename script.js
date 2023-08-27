@@ -26,6 +26,9 @@ function clearTable(parent) {
 // New grid button functions
 function refreshGrid() {
     const newTable = prompt("How many frames should your new Etch-a-Pro have in a row?")
+    if (newTable > 100) {
+        return alert("The number you entered is too large!");
+    }
     clearTable(grid);
     createTable(newTable);
     defaultColor();
