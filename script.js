@@ -131,9 +131,11 @@ function colorPink() {
     }));
 }
 
+// Custom color picking
 function colorCustom() {
     const frames = document.querySelectorAll('.frame');
+    let customColor = document.getElementById('input').value;
     frames.forEach((div) => div.addEventListener('mouseover', () => {
-        document.getElementById("color-picker").style.backgroundColor = "inherit";
+        div.style.backgroundColor = customColor;
     }));
 }
